@@ -1,0 +1,55 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1729265718,
+        "narHash": "sha256-4HQI+6LsO3kpWTYuVGIzhJs1cetFcwT7quWCk/6rqeo=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "ccc0c2126893dd20963580b6478d1a10a4512185",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixpkgs-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "swift-bin-aarch64": "swift-bin-aarch64",
+        "swift-bin-x86_64": "swift-bin-x86_64"
+      }
+    },
+    "swift-bin-aarch64": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1729364195,
+        "narHash": "sha256-brbWGg7rtVWsyxFWj/3BFkrR9+PMpgl5jAfizX+NX8c=",
+        "type": "tarball",
+        "url": "https://download.swift.org/swift-6.0.1-release/debian12-aarch64/swift-6.0.1-RELEASE/swift-6.0.1-RELEASE-debian12-aarch64.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://download.swift.org/swift-6.0.1-release/debian12-aarch64/swift-6.0.1-RELEASE/swift-6.0.1-RELEASE-debian12-aarch64.tar.gz"
+      }
+    },
+    "swift-bin-x86_64": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1729364221,
+        "narHash": "sha256-ca6dzlmfcMHwq8O1cSAObXmCJvPy0k6NXGvmrR6YqRM=",
+        "type": "tarball",
+        "url": "https://download.swift.org/swift-6.0.1-release/debian12/swift-6.0.1-RELEASE/swift-6.0.1-RELEASE-debian12.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://download.swift.org/swift-6.0.1-release/debian12/swift-6.0.1-RELEASE/swift-6.0.1-RELEASE-debian12.tar.gz"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
