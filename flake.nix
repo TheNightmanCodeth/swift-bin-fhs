@@ -29,6 +29,11 @@
             mkdir -p usr
             cp -r ${src}/usr/* usr/
           '';
+          
+          patchPhase = ''
+            patchelf --set-rpath '$ORIGIN/../linux' usr/lib/swift/pm/PluginAPI/libPackagePlugin.so
+          '';
+
           installPhase = ''
             cp -r usr $out
             cp -r usr/bin $bin
